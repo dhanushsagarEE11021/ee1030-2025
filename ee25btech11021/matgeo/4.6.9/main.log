@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.13)  17 SEP 2025 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.13)  18 SEP 2025 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1946,8 +1946,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
@@ -2139,11 +2138,12 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 39.
+ (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c@lstlisting=\count423
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 57
 .
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/jknapl
@@ -2151,20 +2151,20 @@ tx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 5
-9.
+7.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/amsfon
 ts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/amsfon
@@ -2172,22 +2172,25 @@ ts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 5
-9.
+7.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
-9.
+7.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 57--63
+Underfull \hbox (badness 10000) in paragraph at lines 55--61
 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -2196,15 +2199,15 @@ x/updmap/pdftex.map}{/data/data/com.termux/files/usr/share/texlive/2025/texmf-d
 ist/fonts/enc/dvips/base/8r.enc}
 
 ]
-Underfull \vbox (badness 4429) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [2]
-<figs/fig1.png, id=66, 462.528pt x 346.896pt>
+<figs/fig1.png, id=64, 462.528pt x 346.896pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 153.
+Package pdftex.def Info: figs/fig1.png  used on input line 145.
 (pdftex.def)             Requested size: 182.09764pt x 136.57513pt.
 
 
@@ -2213,24 +2216,14 @@ Package pdftex.def Info: figs/fig1.png  used on input line 153.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 54571 strings out of 467801
- 1317987 string characters out of 5417842
- 1930642 words of memory out of 5000000
- 82379 multiletter control sequences out of 15000+600000
+ 54582 strings out of 467801
+ 1318158 string characters out of 5417842
+ 1921666 words of memory out of 5000000
+ 82383 multiletter control sequences out of 15000+600000
  693355 words of font info for 175 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,18n,107p,1194b,1036s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2243,10 +2236,10 @@ pfb></data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></data/data/com.termux/files/usr/share/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/te
 xlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 101196 bytes).
+Output written on main.pdf (3 pages, 102667 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

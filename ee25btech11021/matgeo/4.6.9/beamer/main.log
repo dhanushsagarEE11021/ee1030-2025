@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.13)  17 SEP 2025 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.13)  18 SEP 2025 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,8 +1093,7 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 end/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count391
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -1115,6 +1114,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1177,6 +1177,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 80.
+ (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1272,9 +1273,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count398
-
-No file main.nav.
-
+ (./main.nav)
 
 [1
 
@@ -1307,16 +1306,16 @@ thkerncmss.
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 124.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 124.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 124.
 
 
-Overfull \vbox (3.7268pt too high) detected at line 123
+Overfull \vbox (17.57687pt too high) detected at line 124
  []
 
 
@@ -1324,14 +1323,14 @@ Overfull \vbox (3.7268pt too high) detected at line 123
 [3
 
 ]
-Overfull \vbox (10.09811pt too high) detected at line 139
- []
-
-
 
 [4
 
 ]
+Overfull \vbox (8.2904pt too high) detected at line 157
+ []
+
+
 
 [5
 
@@ -1411,7 +1410,7 @@ Overfull \hbox (14.12334pt too wide) in paragraph at lines 20--20
  []
 
 )
-Overfull \vbox (2.44777pt too high) detected at line 278
+Overfull \vbox (2.44777pt too high) detected at line 293
  []
 
 
@@ -1441,7 +1440,7 @@ tight')[]
 <figs/fig1.png, id=92, 462.528pt x 346.896pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 304.
+Package pdftex.def Info: figs/fig1.png  used on input line 319.
 (pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
 
 
@@ -1462,24 +1461,14 @@ Package pdftex.def Info: figs/fig1.png  used on input line 304.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26827 strings out of 467801
- 520951 string characters out of 5417842
- 904133 words of memory out of 5000000
- 54892 multiletter control sequences out of 15000+600000
+ 26873 strings out of 467801
+ 521403 string characters out of 5417842
+ 903133 words of memory out of 5000000
+ 54930 multiletter control sequences out of 15000+600000
  635959 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,131p,379b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1498,7 +1487,7 @@ les/usr/share/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy8.pfb></data/data/com.termux/files/usr/share/texlive/2025/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (14 pages, 178186 bytes).
+Output written on main.pdf (14 pages, 179388 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

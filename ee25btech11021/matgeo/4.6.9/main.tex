@@ -61,73 +61,96 @@ $\frac{x-2}{3} = \frac{y-1}{1} = \frac{z-2}{5}$.\\
 
 
 \textbf{Solution} \\
-\noindent A plane can be written in matrix form as 
-\(\vec{n}^T(\vec{r} - \vec{P}) = 0\), where \(\vec{n}\) is the normal vector, \(\vec{r}\) is a general point on the plane, and \(\vec{P}\) is a point on the plane:
+The general equation of a plane is
 \begin{align}
-\vec{n}^T(\vec{r} - \vec{P}) = 0
+\vec{n}^\top \vec{X} &= c
+\end{align}
+where $\vec{n}$ is the normal vector.
+
+\noindent
+\begin{align}
+\text{Line 1: } & \frac{x-1}{2} = \frac{y+1}{-1} = \frac{z}{3} \\
+\text{Line 2: } & \frac{x}{4} = \frac{y-2}{-2} = \frac{z+1}{6}.
 \end{align}
 
-\noindent The given lines are in symmetric form:
-\begin{align}
-\text{L1} &= \frac{x-1}{2} = \frac{y+1}{-1} = \frac{z}{3} \\
-\text{L2} &= \frac{x}{4} = \frac{y-2}{-2} = \frac{z+1}{6} \\
-\text{L3} &= \frac{x-2}{3} = \frac{y-1}{1} = \frac{z-2}{5}
-\end{align}
-
-\noindent Extract points and directions from L1 and L2. The vector joining points from the two lines is:
-\begin{align}
-\vec{P}_1 = \myvec{1\\-1\\0}, \quad \vec{d}_1 = \myvec{2\\-1\\3}, \quad
-\vec{P}_2 = \myvec{0\\2\\-1}, \quad \vec{v} = \vec{P}_2 - \vec{P}_1 = \myvec{-1\\3\\-1}
-\end{align}
-
-\noindent The plane's normal vector is orthogonal to both \(\vec{d}_1\) and \(\vec{v}\), so it lies in the nullspace of the constraint matrix:
-\begin{align}
-\vec{A} = \myvec{2 & -1 & 3 \\ -1 & 3 & -1}
-\end{align}
-
-\noindent Row-reduction to find the nullspace:
-\begin{align}
-\vec{A} &\xrightarrow{R_1 \to \tfrac{1}{2}R_1} \myvec{1 & -\tfrac{1}{2} & \tfrac{3}{2} \\ -1 & 3 & -1} \\[1mm]
-\vec{A} &\xrightarrow{R_2 \to R_2 + R_1} \myvec{1 & -\tfrac{1}{2} & \tfrac{3}{2} \\ 0 & \tfrac{5}{2} & \tfrac{1}{2}} \\[1mm]
-\vec{A} &\xrightarrow{R_2 \to \tfrac{2}{5}R_2} \myvec{1 & -\tfrac{1}{2} & \tfrac{3}{2} \\ 0 & 1 & \tfrac{1}{5}} \\[1mm]
-\vec{A} &\xrightarrow{R_1 \to R_1 + \tfrac{1}{2}R_2} \myvec{1 & 0 & \tfrac{8}{5} \\ 0 & 1 & \tfrac{1}{5}}
-\end{align}
-Now, we need to form a vector $\vec{n}_0$ whose product with $\vec{A}$ gives a null vector.\\
-\noindent Express leading variables in terms of the free variable \(n_3\) to get a vector in the nullspace, which is the plane's normal vector:
-\begin{align}
-n_1 + \frac{8}{5} n_3 &= 0 \quad \Rightarrow \quad n_1 = -\frac{8}{5} n_3 \\
-n_2 + \frac{1}{5} n_3 &= 0 \quad \Rightarrow \quad n_2 = -\frac{1}{5} n_3
-\end{align}
-
-\noindent Let \(n_3 = 1\) for simplicity:
-\begin{align}
-\vec{n}_0 = \myvec{-\frac{8}{5} \\[1mm] -\frac{1}{5} \\[1mm] 1}
-\end{align}
-
-\noindent Clearing denominators and adjusting the sign gives the normal vector:
-\begin{align}
-\vec{n} = \myvec{8\\1\\-5}
-\end{align}
-
-\noindent Let \(\vec{r}\) be a general point on the plane:
-\begin{align}
-\vec{r} = \myvec{r_1\\ r_2\\ r_3}
-\end{align}
-
-\noindent The plane equation using point \(\vec{P}_1\) and normal vector \(\vec{n}\):
-\begin{align}
-\vec{n}^T(\vec{r} - \vec{P}_1) = 0
-\end{align}
+From the two given parallel lines we extract:
 
 \begin{align}
-\vec{n}^T \vec{P}_1 = \myvec{8 & 1 & -5}\myvec{1\\-1\\0} = 7
+\vec{v} &= \myvec{2\\-1\\3} 
+&& \text{(common direction vector)} \\
+\vec{p}_1 &= \myvec{1\\-1\\0}, \quad 
+\vec{p}_2 = \myvec{0\\2\\-1} 
+&& \text{(points on each line)} \\
+\vec{d} &= \vec{p}_2 - \vec{p}_1 = \myvec{-1\\3\\-1}
+&& \text{(difference of points)}
 \end{align}
 
+\noindent
+The normal $\vec{n}$ must be orthogonal to both $\vec{v}$ and $\vec{d}$:
 \begin{align}
-\boxed{\myvec{8 & 1 & -5}\,\vec{r} = 7}
+\vec{n}^\top \vec{v} &= 0 \\
+\vec{n}^\top \vec{d} &= 0
 \end{align}
 
-\noindent Check if the third line L3 lies in the plane by verifying the point and direction:
+\noindent
+To fix the scale of $\vec{n}$, we impose a normalization condition using point $\vec{p}_1$:
+\begin{align}
+\vec{n}^\top \vec{p}_1 &= 1
+\end{align}
+
+\noindent
+Put these column vectors into rows of new matrix $\vec{A}$
+\begin{align}
+\vec{A} = \myvec{2 & -1 & 3 \\ -1 & 3 & -1 \\ 1 & -1 & 0}
+\end{align}
+from the equations 0.7,0.8,0.9 we can write 
+\begin{align}
+\myvec{2 & -1 & 3 \\ -1 & 3 & -1 \\ 1 & -1 & 0}\vec{n}
+&= \myvec{0 \\ 0 \\ 1}
+\end{align}
+
+\noindent
+This augmented matrix form is
+\begin{align}
+\myvec{2 & -1 & 3 & 0 \\ -1 & 3 & -1 & 0 \\ 1 & -1 & 0 & 1}
+\end{align}
+
+\noindent
+Row-reducing:
+\begin{align}
+\myvec{2 & -1 & 3 & 0 \\ -1 & 3 & -1 & 0 \\ 1 & -1 & 0 & 1}
+&\xrightarrow{R_2 \to 2R_2+R_1}
+\myvec{2 & -1 & 3 & 0 \\ 0 & 5 & 1 & 0 \\ 1 & -1 & 0 & 1} \\[6pt]
+&\xrightarrow{R_3 \to R_3 - \tfrac{1}{2}R_1}
+\myvec{2 & -1 & 3 & 0 \\ 0 & 5 & 1 & 0 \\ 0 & -\tfrac{1}{2} & -\tfrac{3}{2} & 1} \\[6pt]
+&\xrightarrow{R_3 \to 5R_3 - R_2}
+\myvec{2 & -1 & 3 & 0 \\ 0 & 5 & 1 & 0 \\ 0 & 0 & -7 & 5}
+\end{align}
+
+\noindent
+From the last row, the third entry of $\vec{n}$ is $-\tfrac{5}{7}$.  
+Back-substitution gives
+\begin{align}
+\vec{n} &= \myvec{\tfrac{8}{7} \\[4pt] \tfrac{1}{7} \\[4pt] -\tfrac{5}{7}}
+\end{align}
+
+\noindent
+Therefore, the plane equation is
+\begin{align}
+\vec{n}^\top \vec{X} &= 1
+\end{align}
+
+\noindent
+Equivalently, multiplying throughout by $7$ gives
+\begin{align}
+\myvec{8 & 1 & -5}\vec{X} &= 7
+\end{align}
+
+\noindent
+This is the required plane passing through the given parallel lines.
+
+
+\noindent Check if the third line $\frac{x-2}{3} = \frac{y-1}{1} = \frac{z-2}{5}$. lies in the plane by verifying the point and direction:
 \begin{align}
 \vec{P}_3 = \myvec{2\\1\\2}, \quad \vec{d}_3 = \myvec{3\\1\\5} \\
 \vec{n}^T \vec{P}_3 = \myvec{8 & 1 & -5}\myvec{2\\1\\2} = 7 \\
@@ -139,6 +162,7 @@ n_2 + \frac{1}{5} n_3 &= 0 \quad \Rightarrow \quad n_2 = -\frac{1}{5} n_3
 \myvec{8 & 1 & -5}\,\vec{r} = 7
 \]  
 and it also contains the third line.
+
 
 \begin{figure}[H]
     \centering
